@@ -1,0 +1,99 @@
+.h1{
+text-align: center;
+text-decoration: underline;
+font-size: x-large;
+}
+#contacto{
+  background-color: #ff9046;
+  padding: 50px 0;
+}
+#contacto .fila{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+#contacto a{
+  text-decoration: none;
+  color:#fff;
+  display: block;
+  margin-bottom: 3px;
+}
+#contacto a:hover{
+  text-decoration: underline;
+}
+#contacto h3{
+  margin-bottom: 12px;
+}
+#contacto .media{
+  display: flex;
+  align-items: center;
+}
+#contacto .media i{
+  display: block;
+  margin-right: 10px;
+}
+#contacto input{
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 30px;
+}
+#contacto .enviar{
+  background-color: #f4721c;
+  color: #fff;
+  width: fit-content;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.fila {
+  display: flex;
+}
+
+.columna {
+  width: 50%;
+}
+
+.mapa {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.formulario {
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.formulario input,
+.formulario textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
+

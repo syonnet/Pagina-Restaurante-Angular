@@ -1,0 +1,57 @@
+<body>
+  <section id="inicio">
+    <div class="carrusel">
+      <div class="gallery js-flickity"
+        data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+        <div class="gallery-cell">
+          <img src="assets/img/1.jpg" alt="">
+        </div>
+        <div class="gallery-cell">
+          <img src="assets/img/2.jpg" alt="">
+        </div>
+        <div class="gallery-cell">
+          <img src="assets/img/3.jpg" alt="">
+        </div>
+        <div class="gallery-cell">
+          <img src="assets/img/4.jpg" alt="">
+        </div>
+      </div>
+      <div class="info">
+        <h2>Bienvenidos a la Gran Casona </h2>
+        <p>Disfruta de la deliciosa comida típica de la sierra y una variedad de opciones de comida rápida, postres,
+          pastas y ensaladas. <br>¡Déjanos deleitarte con nuestra gastronomía!</p>
+          
+          <br>
+          <br>
+          <div class="button-container">
+            <div class="modal">
+              <a href="assets/img/video1.mp4" controls class="btn">Ver más</a>
+              <div class="video-container">
+                <span class="close"> &#10006;</span>
+                <video src="" controls></video>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </section>
+
+  <script>
+    const btn = document.querySelector('.btn');
+    const videoContainer = document.querySelector('.video-container');
+    const close = document.querySelector('.close');
+
+    btn.addEventListener('click', () => {
+      videoContainer.classList.add('show');
+      videoContainer.style.pointerEvents = "auto";
+      videoContainer.style.opacity = "100";
+    });
+
+    close.addEventListener('click', () => {
+      videoContainer.classList.remove('show');
+      videoContainer.style.pointerEvents = "none";
+      videoContainer.style.opacity = "110";
+      videoContainer.querySelector("video").pause();
+    });
+  </script>

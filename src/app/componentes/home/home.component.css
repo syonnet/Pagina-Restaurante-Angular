@@ -1,0 +1,167 @@
+#inicio{
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+#inicio .carrusel{
+  position: relative;
+  height: 100%;
+}
+#inicio .carrusel .info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+  text-align: center;
+  color:#fff;
+}
+#inicio .carrusel .info h2{
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script';
+}
+#inicio .carrusel .info button{
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 20px;
+  border:none;
+  background-color: #ff8f46;
+  color: #fff;
+  padding: 7px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#inicio .gallery {
+  width: 100%;
+  height: 100%;
+}
+
+#inicio .gallery-cell {
+  width: 100%;
+  margin-right: 10px;
+  height: 100%;
+}
+#inicio .gallery-cell img{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: rgb(255, 136, 0);
+  font-weight: bolder;
+  box-shadow: 0 10px 40px rgb(255, 255, 255);
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.video-container .close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.video-container video {
+  width: 90%;
+  max-width: 800px;
+  transform: scale(0);
+  box-shadow: 0 20px 20px #f7f5f427;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.video-container.show video {
+  transform: scale(10);
+}
+
+@media screen and (max-width:1070px) {
+  #inicio header .contenido-header .social{
+      display: none;
+  }
+  #inicio header .contenido-header nav{
+      position: static;
+      transform: translateX(0);
+  }
+}
+@media screen and (max-width:700px) {
+  #sabores .fila{
+      display: block;
+  }
+  #platos .fila{
+      display: block;
+      width: 100%;
+  }
+  #platos .fila .item{
+      width: 100%;
+  }
+  #inicio header .contenido-header nav{
+      position: initial;
+      display: none;
+      transform: translate(0);
+  }
+  .nav-responsive{
+      display: block;
+  }
+  #inicio header .contenido-header{
+      padding: 20px;
+  }
+  #inicio header .contenido-header nav.responsive{
+      display: block;
+      position:absolute;
+      left: 0;
+      top: 70px;
+      width: 100%;
+      height: 100vh;
+      background-color: #252A2E;
+      z-index: 99;
+  }
+  nav.responsive ul{
+      display: block !important;
+  }
+  nav.responsive ul li{
+      border-bottom: 1px solid #fff;
+      padding: 10px 0;
+  }
+
+  #contacto .fila{
+      display: block;
+      text-align: center;
+  }
+  #contacto .fila h3{
+      margin: 20px 0 3px 0;
+  }
+  #contacto .fila .media{
+      display: block;
+  }
+  #contacto .fila input{
+      width: 90%;
+  }
+}

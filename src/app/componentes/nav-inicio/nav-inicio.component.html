@@ -1,0 +1,60 @@
+<body>
+  <section id="inicio">
+    <header>
+      <div class="contenido-header">
+        <div class="logo">
+          <h1>La gran Casona</h1>
+          <button (click)="acerca()"><app-acerca></app-acerca></button>
+
+        </div>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="home" onclick="seleccionar()">
+                <i class="fa-solid fa-house"></i>
+                <span>Inicio</span>
+              </a>
+            </li>
+            <li>
+              <a href="sabores" onclick="seleccionar()">
+                <i class="fa-solid fa-ice-cream"></i>
+                <span>Todo el día</span>
+              </a>
+            </li>
+            <li>
+              <a href="platos" onclick="seleccionar()">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Platos</span>
+              </a>
+            </li>
+            <li>
+              <a href="blog" onclick="seleccionar()">
+                <i class="fa-solid fa-pen"></i>
+                <span>Blog</span>
+              </a>
+            </li>
+            <li>
+              <a href="contacto" onclick="seleccionar()">
+                <i class="fa-solid fa-comments"></i>
+                <span>Contacto</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="tel:+1123-456-7890">
+            <i class="fa-solid fa-phone"></i>+593-865-55555
+          </a>
+          <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+
+          <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <div class="button-container">
+    </div>
+  </section>
+</body>

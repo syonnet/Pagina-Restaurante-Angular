@@ -1,0 +1,16 @@
+button {
+  width: fit-content;
+  margin: auto;
+  margin-top: 2px;
+  font-size: 20px;
+  border: none;
+  background-color: #ff8f46;
+  color: #fff;
+  padding: 0px 5px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.container
+{
+  text-align: center;
+}

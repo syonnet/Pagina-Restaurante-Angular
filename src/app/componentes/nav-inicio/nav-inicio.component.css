@@ -1,0 +1,119 @@
+#inicio {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+}
+#inicio header {
+  width: 100%;
+}
+body {
+  background-color: #616161;
+}
+button {
+  width: fit-content;
+  margin: auto;
+  margin-top: 2px;
+  font-size: 20px;
+  border: none;
+  background-color: #ff8f46;
+  color: #fff;
+  padding: 0px 5px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#inicio header .contenido-header {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  position: relative;
+}
+#inicio header .contenido-header nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#inicio header .contenido-header nav ul {
+  display: flex;
+  list-style: none;
+}
+#inicio header .contenido-header .logo {
+  color: #ff8f46;
+  font-size: 22px;
+}
+#inicio header .contenido-header nav ul li {
+  text-align: center;
+}
+#inicio header .contenido-header nav ul li i {
+  display: block;
+  color: #a8a8a8;
+  margin-bottom: 10px;
+}
+#inicio header .contenido-header nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #a8a8a8;
+  margin: 0px 20px;
+}
+#inicio header .contenido-header nav ul li:hover i {
+  color: #ff8f46;
+}
+#inicio header .contenido-header .social a {
+  display: inline-block;
+  background-color: #ff8f46;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+#inicio header .contenido-header .social > i {
+  display: inline-block;
+  color: #a8a8a8;
+  margin-left: 10px;
+}
+.nav-responsive {
+  display: none;
+  font-size: 25px;
+  color: #a8a8a8;
+}
+@media screen and (max-width: 1070px) {
+  #inicio header .contenido-header .social {
+    display: none;
+  }
+  #inicio header .contenido-header nav {
+    position: static;
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 700px) {
+  #inicio header .contenido-header nav {
+    position: initial;
+    display: none;
+    transform: translate(0);
+  }
+  .nav-responsive {
+    display: block;
+  }
+  #inicio header .contenido-header {
+    padding: 20px;
+  }
+  #inicio header .contenido-header nav.responsive {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    height: 100vh;
+    background-color: #252a2e;
+    z-index: 99;
+  }
+  nav.responsive ul {
+    display: block !important;
+  }
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
+}
